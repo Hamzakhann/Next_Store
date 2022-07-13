@@ -4,7 +4,7 @@ import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
   const router = useRouter();
-  let [cart, setCart] = useState("");
+  let [cart, setCart] = useState(null);
 
   useEffect(() => {
     setInterval(() => {
