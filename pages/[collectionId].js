@@ -17,7 +17,10 @@ const collection = ({ response }) => {
       {collection.products.map((item, i) => (
         <div onClick={() => fetchProductsRedirect(item.id)} key={i}>
           <h5>{item.title}</h5>
-          <img src={item.images[0].src} />
+          <img
+            src={item.images[0].src}
+            style={{ width: "400px", display: "block" }}
+          />
         </div>
       ))}
     </div>

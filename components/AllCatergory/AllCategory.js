@@ -15,7 +15,10 @@ const AllCategory = ({ catergoryTitle, categoryImage, collId }) => {
     <div style={{ cursor: "pointer" }} onClick={() => fetchAllProducts(collId)}>
       <div>
         <h5>{catergoryTitle}</h5>
-        <img src={categoryImage} />
+        <img
+          src={categoryImage}
+          style={{ maxWidth: "400px", display: "block" }}
+        />
       </div>
     </div>
   );
